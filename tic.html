@@ -1,0 +1,64 @@
+<html>
+<header>
+	<meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tic.css">
+	<title>Tic Tac Toe</title>
+</header>
+<body>
+<!--<h1>Tic Tac Toe!</h1>-->
+<div id='game-box'>
+	<div id='welcome'>Welcome to <br> Tic Tac Toe <br> by Collin Banks</div>
+	<div id='prompt'>
+		<p id='user-prompt'>Choose a letter:</p>
+		<p id='x-o'><button id='x'>X</button><button id='o'>O</button></p>
+	</div>
+
+	<div id='you-lose'>You Lose! 
+		<p id='try-again'><button id='btn'>Try Again?</button></p>
+		<p id='end-game'><button id='btn'>Quit</button></p>
+	</div> 
+
+	<div id='you-lose-o'>You Lose! 
+		<p id='try-again-o'><button id='btn'>Try Again?</button></p>
+		<p id='end-game-o'><button id='btn'>Quit</button></p>
+	</div> 
+
+	<div id='draw'>It's a draw!
+		<p id='try-again-d'><button id='btn'>Try Again?</button></p>
+		<p id='end-game-d'><button id='btn'>Quit</button></p>
+	</div> 
+
+	<div id='draw-o'>It's a draw!
+		<p id='try-again-d-o'><button id='btn'>Try Again?</button></p>
+		<p id='end-game-d-o'><button id='btn'>Quit</button></p>
+	</div> 
+
+	<table id='game-board'>
+		<tr id='uno'>
+			<td id='one'></td>
+			<td id='two'></td>
+			<td id='three'></td>
+		</tr>
+		<tr>
+			<td id='four'></td>
+			<td id='five'></td>
+			<td id='six'></td>
+		</tr>
+		<tr>
+			<td id='seven'></td>
+			<td id='eight'></td>
+			<td id='nine'></td>
+		</tr>
+	</table>
+	<div id='game-over'>Thanks for playing!
+		<p id='play-again'><button id='p-again'>Play Again</button></p>
+		<p id='or'>or...</p>
+		<footer><a target='_blank' href='https://github.com/jazztbone2b'>Click here to see more work by Collin Banks</a></footer>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="tic.js"></script>
+</body>
+</html>
