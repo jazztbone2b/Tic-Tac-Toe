@@ -147,7 +147,12 @@ function computerMoveX(){
 	//block user from winning 8 up
 	else if(spaceEight.innerHTML === user && spaceFive.innerHTML === user && spaceTwo.innerHTML === ''){
 		spaceTwo.innerHTML = computer;
-	}
+	} else if(spaceEight.innerHTML === user && spaceSix.innerHTML === user && spaceFive.innerHTML === ''){
+		spaceFive.innerHTML = computer;
+	} //else if(spaceEight.innerHTML === user && spaceNine.innerHTML === user && spaceSix.innerHTML === user && spaceSeven.innerHTML === ''){
+		//spaceSeven.innerHTML = computer;
+	//}
+	
 	//block user from winning 9 across and diagonal
 	else if(spaceNine.innerHTML === user && spaceEight.innerHTML === user && spaceSeven.innerHTML === ''){
 		spaceSeven.innerHTML = computer;
@@ -159,6 +164,9 @@ function computerMoveX(){
 		spaceFive.innerHTML = computer;
 	}
 
+	else if(spaceThree.innerHTML === computer && spaceFive.innerHTML === ''){
+		spaceFive.innerHTML = computer;
+	}
 
 	//options to block spaceOne
 	else if(spaceOne.innerHTML === user && spaceFive.innerHTML === ''){
@@ -251,14 +259,14 @@ function computerMoveX(){
 		spaceNine.innerHTML = computer;
 	}
 	//spaceSix
-	else if(spaceSix.innerHTML === user && spaceThree.innerHTML === ''){
-		spaceThree.innerHTML = computer;
+	else if(spaceSix.innerHTML === user && spaceFive.innerHTML === ''){
+		spaceFive.innerHTML = computer;
 	} else if(spaceSix.innerHTML === user && spaceNine.innerHTML === ''){
 		spaceNine.innerHTML = computer;
 	} else if(spaceSix.innerHTML === user && spaceFour.innerHTML === ''){
 		spaceFour.innerHTML = computer;
-	} else if(spaceSix.innerHTML === user && spaceFive.innerHTML === ''){
-		spaceFive.innerHTML = computer;
+	} else if(spaceSix.innerHTML === user && spaceThree.innerHTML === ''){
+		spaceThree.innerHTML = computer;
 	} else if(spaceSix.innerHTML === user && spaceTwo.innerHTML === ''){
 		spaceTwo.innerHTML = computer;
 	} else if(spaceSix.innerHTML === user && spaceOne.innerHTML === ''){
@@ -288,9 +296,9 @@ function computerMoveX(){
 	}
 	//spaceEight
 	else if(spaceEight.innerHTML === user && spaceSeven.innerHTML === ''){
-		spaceSeven.innerHTML = computer;
-	} else if(spaceEight.innerHTML === user && spaceFive.innerHTML === ''){
 		spaceFive.innerHTML = computer;
+	} else if(spaceEight.innerHTML === user && spaceFive.innerHTML === ''){
+		spaceSeven.innerHTML = computer;
 	} else if(spaceEight.innerHTML === user && spaceNine.innerHTML === ''){
 		spaceNine.innerHTML = computer;
 	} else if(spaceEight.innerHTML === user && spaceTwo.innerHTML === ''){
