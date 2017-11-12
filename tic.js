@@ -162,6 +162,8 @@ function computerMoveX(){
 		spaceOne.innerHTML = computer;
 	} else if(spaceNine.innerHTML === user && spaceOne.innerHTML === user && spaceFive.innerHTML === ''){
 		spaceFive.innerHTML = computer;
+	} else if(spaceNine.innerHTML === user && spaceSix.innerHTML === user && spaceThree.innerHTML === ''){
+		spaceThree.innerHTML = computer;
 	}
 
 	else if(spaceThree.innerHTML === computer && spaceFive.innerHTML === ''){
@@ -402,7 +404,7 @@ function computerMoveO(){
 		spaceOne.innerHTML = computer;
 	} else if(spaceNine.innerHTML === computer && spaceOne.innerHTML === computer && spaceFive.innerHTML === ''){
 		spaceFive.innerHTML = computer;
-	}
+	} 
 
 //**********Code to block the user from winning**********//
 	//block user from winning in row 1, down, right, diagonal
@@ -476,6 +478,8 @@ function computerMoveO(){
 		spaceOne.innerHTML = computer;
 	} else if(spaceNine.innerHTML === user && spaceOne.innerHTML === user && spaceFive.innerHTML === ''){
 		spaceFive.innerHTML = computer;
+	} else if(spaceNine.innerHTML === user && spaceSix.innerHTML === user && spaceThree.innerHTML === ''){
+		spaceThree.innerHTML = computer;
 	}
 
 
