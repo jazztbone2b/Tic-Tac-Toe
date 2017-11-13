@@ -11,6 +11,34 @@ let spaceSix = document.querySelector('#six');
 let spaceSeven = document.querySelector('#seven');
 let spaceEight = document.querySelector('#eight');
 let spaceNine = document.querySelector('#nine');
+let spacesArr = document.getElementsByClassName('spaces');
+//=========== Levi ==========
+// function log(){
+// 	let spacesArr = document.getElementsByClassName('spaces');
+// 	const winningPatterns = [
+// 		[0,1,2], // pattern 0
+// 		[3,4,5], // pattern 1
+// 		[6,7,8], // pattern 2
+// 		[0,3,6], // pattern 3
+// 		[1,4,7], // pattern 4
+// 		[2,5,8], // pattern 5
+// 		[0,4,8], // pattern 6
+// 		[2,4,6], // pattern 7
+// 	];
+
+// 	console.clear();
+// 	for(var i = 0; i < spacesArr.length; i++){
+// 		console.log('space' + i + ': ' + spacesArr[i].innerText);
+// 		for(var n = 0; n < winningPatterns.length; n++){
+// 			for(var m = 0; m < winningPatterns[n].length; m++){
+// 				if(spacesArr[i] !== '' && i == winningPatterns[n][m]){
+// 					console.log('space ' + i + ': ' + 'is found in pattern: ' + n);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+//========== Levi ============
 
 //find a way to delay the computer input for 1 second
 function welcome(){
@@ -651,145 +679,42 @@ function loserDisplay(){
 	$('#you-lose').fadeIn(500);
 	$('#draw').hide();
 
-	spaceOne.style.backgroundColor = 'white';
-	spaceThree.style.backgroundColor = 'white';
-	spaceFive.style.backgroundColor = 'white';
-	spaceSeven.style.backgroundColor = 'white';
-	spaceNine.style.backgroundColor = 'white';
-
-	spaceTwo.style.backgroundColor = 'white';
-	spaceFour.style.backgroundColor = 'white';
-	spaceSix.style.backgroundColor = 'white';
-	spaceEight.style.backgroundColor = 'white';
+	for(var i = 0; i < spacesArr.length; i++){
+		spacesArr[i].style.backgroundColor = '#fff';
+	}
 }
+
 function loserDisplayO(){
 	$('#you-lose-o').fadeIn(500);
 	$('#draw-o').hide();
 
-	spaceOne.style.backgroundColor = 'white';
-	spaceThree.style.backgroundColor = 'white';
-	spaceFive.style.backgroundColor = 'white';
-	spaceSeven.style.backgroundColor = 'white';
-	spaceNine.style.backgroundColor = 'white';
-
-	spaceTwo.style.backgroundColor = 'white';
-	spaceFour.style.backgroundColor = 'white';
-	spaceSix.style.backgroundColor = 'white';
-	spaceEight.style.backgroundColor = 'white';
+	for(var i = 0; i < spacesArr.length; i++){
+		spacesArr[i].style.backgroundColor = '#fff';
+	}
 }
+
 function drawDisplay(){
 	$('#draw').fadeIn(500);
 
-	if(spaceOne.innerHTML === user){
-		spaceOne.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceOne.style.backgroundColor = '#ef5350';		
-	} 
-
-	if(spaceTwo.innerHTML === user){
-		spaceTwo.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceTwo.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceThree.innerHTML === user){
-		spaceThree.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceThree.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceFour.innerHTML === user){
-		spaceFour.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceFour.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceFive.innerHTML === user){
-		spaceFive.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceFive.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceSix.innerHTML === user){
-		spaceSix.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceSix.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceSeven.innerHTML === user){
-		spaceSeven.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceSeven.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceEight.innerHTML === user){
-		spaceEight.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceEight.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceNine.innerHTML === user){
-		spaceNine.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceNine.style.backgroundColor = '#ef5350';
-	} 
+	for(var i = 0; i < spacesArr.length; i++){
+		if(spacesArr[i].innerHTML === user){
+			spacesArr[i].style.backgroundColor = '#b71c1c';
+		} else {
+			spacesArr[i].style.backgroundColor = '#ef5350';
+		}
+	}
 }
 function drawDisplayO(){
 	$('#draw-o').fadeIn(500);
 
-	if(spaceOne.innerHTML === user){
-		spaceOne.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceOne.style.backgroundColor = '#ef5350';		
-	} 
-
-	if(spaceTwo.innerHTML === user){
-		spaceTwo.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceTwo.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceThree.innerHTML === user){
-		spaceThree.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceThree.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceFour.innerHTML === user){
-		spaceFour.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceFour.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceFive.innerHTML === user){
-		spaceFive.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceFive.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceSix.innerHTML === user){
-		spaceSix.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceSix.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceSeven.innerHTML === user){
-		spaceSeven.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceSeven.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceEight.innerHTML === user){
-		spaceEight.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceEight.style.backgroundColor = '#ef5350';
-	} 
-
-	if(spaceNine.innerHTML === user){
-		spaceNine.style.backgroundColor = '#b71c1c';
-	} else{
-		spaceNine.style.backgroundColor = '#ef5350';
-	} }
+	for(var i = 0; i < spacesArr.length; i++){
+		if(spacesArr[i].innerHTML === user){
+			spacesArr[i].style.backgroundColor = '#b71c1c';
+		} else {
+			spacesArr[i].style.backgroundColor = '#ef5350';
+		}
+	}
+}
 //win function for user X
 function winnerX(){
 	let user = 'X';
@@ -847,21 +772,25 @@ function winnerX(){
 		spaceNine.style.backgroundColor = '#ef5350';
 	}
 }
-//draw function for user X
-function drawX(){
-	let one = spaceOne.innerHTML;
-	let two = spaceTwo.innerHTML;
-	let three = spaceThree.innerHTML;
-	let four = spaceFour.innerHTML;
-	let five = spaceFive.innerHTML;
-	let six = spaceSix.innerHTML;
-	let seven = spaceSeven.innerHTML;
-	let eight = spaceEight.innerHTML;
-	let nine = spaceNine.innerHTML;
+//draw function for user X and user O
+/*
+Instead of declaring two different functions that do the same thing, declare it once.
+drawX and drawO did the exact same thing. drawO did have a small difference where you 
+redeclared X and O variables which didn't seem nessesary. 
 
-	if(one !== '' && two !== '' && three !== '' &&
-		four !== '' && five !== '' && six !== '' &&
-		seven !== '' && eight !== '' && nine !== ''){
+Here I declared an empty array. I loop through the spacesArr and check if any of the 
+innerHTML were either equal to X or to O and if they were, those values goes pushed to 
+the arr array. Then it runs a check to see you the arr length is equal to 9 and if it is, 
+call drawDisplay function. 
+*/
+function draw(){
+	let arr = [];
+	for(var i = 0; i < spacesArr.length; i++){
+		if(spacesArr[i].innerHTML === 'X' || spacesArr[i].innerHTML === 'O'){
+			arr.push(spacesArr[i].innerHTML);
+		}
+	}
+	if(arr.length === 9){
 		drawDisplay();
 	}
 }
@@ -922,27 +851,6 @@ function winnerO(){
 		spaceNine.style.backgroundColor = '#ef5350';
 	}
 }
-//draw function for user O
-function drawO(){
-	let user = 'O';
-	let computer = 'X';
-
-	let one = spaceOne.innerHTML;
-	let two = spaceTwo.innerHTML;
-	let three = spaceThree.innerHTML;
-	let four = spaceFour.innerHTML;
-	let five = spaceFive.innerHTML;
-	let six = spaceSix.innerHTML;
-	let seven = spaceSeven.innerHTML;
-	let eight = spaceEight.innerHTML;
-	let nine = spaceNine.innerHTML;
-
-	if(one !== '' && two !== '' && three !== '' &&
-		four !== '' && five !== '' && six !== '' &&
-		seven !== '' && eight !== '' && nine !== ''){
-		drawDisplayO();
-	}
-}
 
 //game to be run when X is clicked
 function clickX(){
@@ -959,8 +867,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#two').click(function(){
@@ -970,8 +879,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);		
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#three').click(function(){
@@ -981,8 +891,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#four').click(function(){
@@ -992,8 +903,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#five').click(function(){
@@ -1003,8 +915,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#six').click(function(){
@@ -1014,8 +927,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#seven').click(function(){
@@ -1025,8 +939,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#eight').click(function(){
@@ -1036,8 +951,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 
 	$('#nine').click(function(){
@@ -1047,8 +963,9 @@ function clickX(){
 			return;
 		}
 		setTimeout(computerMoveX, 250);
-		setTimeout(drawX, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerX, 500);
+		log();
 	})
 }
 
@@ -1081,7 +998,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1092,7 +1009,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1103,7 +1020,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1114,7 +1031,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1125,7 +1042,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1136,7 +1053,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1147,7 +1064,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1158,7 +1075,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 
@@ -1169,7 +1086,7 @@ function clickO(){
 			return;
 		}
 		setTimeout(computerMoveO, 250);
-		setTimeout(drawO, 500);
+		setTimeout(draw, 500);
 		setTimeout(winnerO, 500);
 	})
 }
