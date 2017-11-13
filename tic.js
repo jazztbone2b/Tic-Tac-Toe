@@ -3,6 +3,7 @@ let user = 'X';
 let computer = 'O';
 let status = false;
 
+// For overall selector mutation
 let spaceOne = document.querySelector('#one');
 let spaceTwo = document.querySelector('#two');
 let spaceThree = document.querySelector('#three');
@@ -12,6 +13,17 @@ let spaceSix = document.querySelector('#six');
 let spaceSeven = document.querySelector('#seven');
 let spaceEight = document.querySelector('#eight');
 let spaceNine = document.querySelector('#nine');
+
+// when only innerHTML is needed
+let one = spaceOne.innerHTML;
+let two = spaceTwo.innerHTML;
+let three = spaceThree.innerHTML;
+let four = spaceFour.innerHTML;
+let five = spaceFive.innerHTML;
+let six = spaceSix.innerHTML;
+let seven = spaceSeven.innerHTML;
+let eight = spaceEight.innerHTML;
+let nine = spaceNine.innerHTML;
 
 // Array for item filtering
 let spacesArr = document.getElementsByClassName('spaces');
@@ -391,16 +403,6 @@ function winnerX(){
 	let user = 'X';
 	let computer = 'O';
 
-	let one = spaceOne.innerHTML;
-	let two = spaceTwo.innerHTML;
-	let three = spaceThree.innerHTML;
-	let four = spaceFour.innerHTML;
-	let five = spaceFive.innerHTML;
-	let six = spaceSix.innerHTML;
-	let seven = spaceSeven.innerHTML;
-	let eight = spaceEight.innerHTML;
-	let nine = spaceNine.innerHTML;
-
 	if(one === computer && two === computer && three === computer){
 		loserDisplay();
 		spaceOne.style.backgroundColor = '#ef5350';
@@ -469,16 +471,6 @@ function draw(){
 function winnerO(){
 	let user = 'O';
 	let computer = 'X';
-
-	let one = spaceOne.innerHTML;
-	let two = spaceTwo.innerHTML;
-	let three = spaceThree.innerHTML;
-	let four = spaceFour.innerHTML;
-	let five = spaceFive.innerHTML;
-	let six = spaceSix.innerHTML;
-	let seven = spaceSeven.innerHTML;
-	let eight = spaceEight.innerHTML;
-	let nine = spaceNine.innerHTML;
 
 	if(one === computer && two === computer && three === computer){
 		loserDisplayO();

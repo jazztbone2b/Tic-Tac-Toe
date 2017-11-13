@@ -72,17 +72,17 @@ td:hover{
 }
 button{
 	text-decoration: none;
-	border: none;
 	padding: 10px;
 	margin: 0, 30;
 	font-size: 50px;
-	background-color: white;
+	background-color: #fff;
 	border-radius: 5px;
 	font-family: 'Indie Flower', sans-serif;
+	border: 3px solid #fff;
 }
 button:hover{
 	cursor: pointer;
-	border: 3px dashed black;
+	border: 3px dashed #000;
 }
 #you-lose, #you-lose-o{
 	display: none;
